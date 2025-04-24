@@ -17,7 +17,7 @@ function updateRegisteredList(list) {
     list.innerHTML = "<br>";
     users.length ?
         users.forEach(user => {list.innerHTML += `<li>${user.name} (${user.email},  ${user.age})</li><br>`})
-        : list.innerHTML += "<p>No users registered</p>";
+        : list.innerHTML += "<p>Sem usuários registrados</p>";
 };
 console.log(listElement);
 updateRegisteredList(listElement);
